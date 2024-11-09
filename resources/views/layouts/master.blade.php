@@ -10,6 +10,7 @@
     <meta name="author" content="">
 
     <title>SB Admin 2 - Dashboard</title>
+    @notifyCss
 
     <!-- Custom fonts for this template-->
     <link href="/sbadmin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -43,7 +44,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="/admin">
+                <a class="nav-link" href="/admin/beranda">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -52,6 +53,10 @@
                     <i class="fas fa-fw fa-list"></i>
                     <span>Data Barang</span></a>
             </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/admin/laporan">
+                    <i class="fas fa-fw fa-file"></i>
+                    <span>Laporan</span></a>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -220,6 +225,9 @@
     <!-- Page level custom scripts -->
     <script src="/sbadmin/js/demo/chart-area-demo.js"></script>
     <script src="/sbadmin/js/demo/chart-pie-demo.js"></script>
+
+    <x-notify::notify />
+    @notifyJs
 
 </body>
 
